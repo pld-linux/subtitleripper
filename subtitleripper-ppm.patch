@@ -1,0 +1,11 @@
+--- Makefile.orig	2004-07-15 21:37:19.771430920 +0200
++++ Makefile	2004-07-15 21:37:35.139094680 +0200
+@@ -9,7 +9,7 @@
+ 
+ ### enable ppm support ###
+ DEFINES  += -D_HAVE_LIB_PPM_
+-LIBS     += -lppm
++LIBS     += -lnetpbm
+ 
+ ### enable PNG support ###
+ DEFINES += -D_HAVE_PNG_
