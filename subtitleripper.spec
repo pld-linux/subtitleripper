@@ -2,12 +2,13 @@
 %define		ver	0.3
 %define		src	%{ver}-%{rel}
 Summary:	Converter for DVD subtitles
+Summary(pl):	Konwerter do napisów z DVD
 Name:		subtitleripper
 Version:	%{ver}_%{rel}
 Release:	0.1
 License:	GPL
 Group:		Applications/Multimedia
-Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{src}.tgz
+Source0:	http://dl.sourceforge.net/subtitleripper/%{name}-%{src}.tgz
 # Source0-md5:	c0bd49a88f667c68c4430ad25bbed510
 Patch0:		%{name}-ppm.patch
 URL:		http://subtitleripper.sourceforge.net/
@@ -16,7 +17,10 @@ Requires:	transcode
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-DVD subtitle ripper based on transcode
+DVD subtitle ripper based on transcode.
+
+%description -l pl
+Ripper do napisów z DVD oparty na transcode.
 
 %prep
 %setup -q -n subtitleripper
@@ -28,6 +32,7 @@ DVD subtitle ripper based on transcode
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
+
 install pgm2txt $RPM_BUILD_ROOT%{_bindir}
 install srttool $RPM_BUILD_ROOT%{_bindir}
 install subtitle2pgm $RPM_BUILD_ROOT%{_bindir}
