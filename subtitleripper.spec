@@ -5,7 +5,7 @@ Summary:	Converter for DVD subtitles
 Summary(pl):	Konwerter do napisów z DVD
 Name:		subtitleripper
 Version:	%{ver}_%{rel}
-Release:	0.1
+Release:	1
 License:	GPL
 Group:		Applications/Multimedia
 Source0:	http://dl.sourceforge.net/subtitleripper/%{name}-%{src}.tgz
