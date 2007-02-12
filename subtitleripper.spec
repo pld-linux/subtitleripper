@@ -2,7 +2,7 @@
 %define		ver	0.3
 %define		src	%{ver}-%{rel}
 Summary:	Converter for DVD subtitles
-Summary(pl):	Konwerter do napisów z DVD
+Summary(pl.UTF-8):   Konwerter do napisÃ³w z DVD
 Name:		subtitleripper
 Version:	%{ver}_%{rel}
 Release:	3
@@ -19,8 +19,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 DVD subtitle ripper based on transcode.
 
-%description -l pl
-Ripper do napisów z DVD oparty na transcode.
+%description -l pl.UTF-8
+Ripper do napisÃ³w z DVD oparty na transcode.
 
 %prep
 %setup -q -n subtitleripper
