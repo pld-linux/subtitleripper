@@ -24,7 +24,7 @@ Ripper do napisów z DVD oparty na transcode.
 
 %prep
 %setup -q -n subtitleripper
-%patch0 -p0
+%patch -P0 -p0
 
 %build
 %{__make}
